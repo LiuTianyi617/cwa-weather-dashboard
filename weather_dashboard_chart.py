@@ -18,7 +18,7 @@ def fetch_and_process_data(selected_location):
     url = f"https://opendata.cwa.gov.tw/api/v1/rest/datastore/{DATASTORE_ID}?Authorization={API_KEY}&locationName={selected_location}"
 
     try:
-        res = requests.get(url)
+        res = requests.get(url, verify=False)
         data = res.json()
 
         if res.status_code == 200 and data.get("success") == "true":
