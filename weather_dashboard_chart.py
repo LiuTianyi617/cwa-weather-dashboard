@@ -4,7 +4,7 @@ import pandas as pd
 import os
 
 # 從 Streamlit Cloud Secrets (環境變數) 讀取金鑰
-API_KEY = os.environ.get("CWA-F40CFF75-FD47-48BC-8A1E-6FD9A6D62751") 
+API_KEY = os.environ.get("CWA_API_KEY") 
 DATASTORE_ID = "F-C0032-001" 
 
 # --- 數據抓取與處理函式 (與之前提供的一致，在此省略細節以保持簡潔) ---
